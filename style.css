@@ -1,0 +1,67 @@
+/* Styling for index.html */
+html,
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.header h1 {
+    padding-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header,
+.footer {
+    background-color: rgb(70, 215, 172);
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.main-content .row {
+    height: 100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+
+.main-content .vr {
+    margin: 1% 0 1%;
+    padding: 0;
+    width: 4px;
+    border-radius: 4px;
+    background-color: rgb(70, 215, 172);
+    opacity: unset;
+}
+
+.main-content hr {
+    border: 2px solid rgb(70, 215, 172);
+    border-radius: 4px;
+    opacity: unset;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        overflow: auto;
+    }
+    #enroll-btn {
+        display: block;
+    }
+}
